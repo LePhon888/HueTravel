@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Qwigley&display=swap');
+
+:root {
+    --header-height: 94px;
+    --white-color: #fff;
+    --black-color: #000;
+    --text-color: #291514;
+    --main-color-first: #a66f3a;
+    --main-color-second: #702023;
+}
+
+* {
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+
+.animation-right, .animation-left, .animation-top {
+    position: relative;
+    transition: all 1s ease;
+}
+.animation-right {
+    animation: aniRight ease 3s;
+}
+
+.animation-left {
+    animation: aniLeft ease 3s;
+}
+
+.animation-top {
+    animation: aniTop ease 4s;
+}
+
+@keyframes aniRight {
+    from {
+        transform: translateX(100px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aniLeft {
+    from {
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+@keyframes aniTop {
+    from {
+        transform: translateY(-100px);
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+.scrollToTop {
+    width: 50px;
+    height: 60px;
+    padding: 18px;
+    border-radius: 2px;
+    text-align: center;
+    background-color: var(--main-color-second);
+    font-weight: bold;
+    color: var(--white-color);
+    text-decoration: none;
+    position: fixed;
+    bottom: 140px;
+    right: 40px;
+    display: none;
+}
+
+.scrollToTop:hover {
+    opacity: 0.9;
+}

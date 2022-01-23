@@ -1,0 +1,414 @@
+.app {
+    overflow: hidden;
+    background-color: #182634;
+}
+.header {
+    height: var(--header-height);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 22;
+    background-color: var(--white-color);
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-around;
+    height: 100%;
+}
+
+.fixed {
+    background-color: #000;
+}    
+
+.header-scroll {
+    background-color: var(--white-color);
+    transition: 0.3s all cubic-bezier(0.65, 0.05, 0.36, 1);
+    box-shadow: 0 1px 6px 0 rgb(32, 33, 36, 0.3);
+
+}
+.logo {
+    font-size: 32px;
+    font-weight: 900;
+    color: #702023;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 70px;
+}
+.header-container nav {
+    transition: 0.5s ease;
+}
+.logo span {
+    color: var(--main-color-first);
+}
+.header-container nav ul {
+    display: flex;
+}
+
+.nav-icon {
+    line-height: 94px;
+    margin-left: 50px;
+}
+
+.nav-icon i {
+    margin-left: 28px;
+    font-size: 21px;
+    color: var(--main-color-second);
+}
+
+.nav-icon i:hover {
+    color: var(--main-color-first);
+    cursor: pointer;
+}
+
+.header-container nav li {
+    line-height: 70px;
+    margin-left: 24px;
+}
+.header-container nav a {
+    position: relative;
+    font-size: 16.5px;
+    font-weight: bold;
+    color: var(--main-color-second);
+    text-transform: uppercase;
+    line-height: 32px;
+    padding-bottom: 24px;
+    transition: 0.3s ease;
+}
+.header-container nav a:before {
+    content: "";
+    position: absolute;
+    background: var(--main-color-first);
+    width: 0;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    transition: 0.3s ease-in;
+}
+.header-container nav a:hover:before {
+    width: 100%;
+}
+.header-container nav a:hover {
+    color: var(--main-color-first);
+}
+/* =====================   PLACE   ===================== */
+/* ---------PAGE-HEADER---------- */
+.page-header {
+    display: block;
+    position: relative;
+    top: 70px;
+    padding: 450px ;
+}
+.page-header-bg {
+    background-image: url('../images/about/Background\ \(1\).png');
+    position: absolute;
+    top: 0;left: 0;
+    right: 0;bottom: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+.page-header-topic{
+    display: block;
+    position: relative;
+    text-align: center;
+    text-transform: none;
+    padding: 200px;
+    font-size: 100px;
+    font-weight: 700;
+    color: rgb(204, 146, 204);
+    top: 100px;
+}
+/*--------info----------*/
+.container h1{
+    color: white;
+    text-align: center;
+}
+.info {
+    width: 1100px;
+    padding: 200px;
+    background-color: rgb(54, 43, 43);
+    position: relative;
+    top:60px;
+    left: 400px;
+    text-align: center;
+    height: 550px;
+}
+.info div {
+    text-align: justify;
+}
+.info,.text p{
+    margin-top: 10px;
+    text-transform: none;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    letter-spacing: 0.1px;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    position: relative;
+}
+.main-info{
+    width: 220px;
+    position: relative;
+    top:-50px;
+    left: 450px;
+}
+.main-info span{
+    font-weight: bold;
+    font-size: 30px;
+}
+/*--------goals----------*/
+.goals{
+    width: 1100px;
+    padding: 100px;
+    background-color: rgb(54, 70, 78);
+    position: relative;
+    top:60px;
+    left: 400px;
+    height: 800px;
+}
+.symbol-1{
+    position:relative;
+    padding: 5px;
+    width: 50px;
+    height:130px;
+    top: -10px;
+}
+.symbol-2{
+    position:relative;
+    padding: 5px;
+    width: 50px;
+    height:150px;
+    top:-10px;
+}
+.symbol-1,.symbol-2 p{
+    color: white;
+    text-align: right;
+    font-size: 45px;
+}
+.text{
+    position:absolute;
+    width: 300px;
+    height: 300px;
+    top: 100px;
+    left: 50px;
+}
+.left-side{
+    position:absolute;
+    width: 400px;
+    height: 400px;
+    left: 100px;
+    top:150px; 
+}
+.right-side{
+    position: absolute;
+    top: 200px;
+    left: 600px;
+    width: 450px;
+}
+.right-side img{
+    width: 100%;
+    height: 100%;
+}
+
+/*--------contact----------*/
+.contact {
+    width: 1100px;
+    padding: 50px;
+    background-color: rgb(88, 63, 63);
+    position: relative;
+    left: 400px;
+    height: 750px;
+}
+.phone {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    top: 200px;
+    left: 160px;
+}
+.contact-00 p{
+    text-align: left;
+    color: white;
+    line-height: auto;
+    font-size: 25px;
+    font-weight: 10px;
+    text-transform: none;
+}
+.contact-00{
+    position: absolute;
+    width: 400px;
+    top: 200px;
+    left: 550px;
+}
+#contact-button {
+    background-color: green;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    color: white;
+    border-radius: 20px;
+    padding: 15px;
+}
+.popup {
+    display: none;
+    position: fixed;
+    padding: 50px;
+    left: 25%;
+    top: 200px;
+    width: 50%;
+    height: 50%;
+    background-color: rgb(42, 132, 155);
+    z-index: 20;
+}
+/*--------member----------*/
+#member{
+    width: 1100px;
+    background-color: rgb(54, 70, 78);
+    position: relative;
+    left: 400px;
+    height: 600px;
+    padding: 50px;
+}
+.left-member {
+    position: absolute;
+    width: 450px;
+    left: 100px;
+}
+.right-member {
+    position: absolute;
+    width: 450px;
+    left: 550px;
+}
+.circleBase {
+    border-radius: 50%;
+    position: relative;
+}
+.type-1,.type-2 {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    top: 50px;
+    left: 150px;
+}
+.member-1, .member-2 {
+    border-radius: 100%;
+    width: 100%;
+    height: 100%;
+}
+.member-intro-1, .member-intro-2 {
+    position: relative;
+    top:120px;
+    text-align: center;
+    left: -10px;
+}
+#member p{
+    color: white;
+}
+.member-intro-1 a{ font-size:1.1em; font-weight:bold;}
+.member-intro-1 a:link { color:#1f7aa5; text-decoration:none;  text-align: center; }
+.member-intro-1 a:visited { color:#333399;text-decoration:none; }
+.member-intro-1 a:active { color:#0033ff;text-decoration:underline; }
+.member-intro-1 a:hover {
+background-color:#ffff00;
+text-decoration:underline;
+font-size: 1.5em;
+}
+.member-intro-2 a{ font-size:1.1em; font-weight:bold;}
+.member-intro-2 a:link { color:#1f7aa5; text-decoration:none;  text-align: center; }
+.member-intro-2 a:visited { color:#333399;text-decoration:none; }
+.member-intro-2 a:active { color:#0033ff;text-decoration:underline; }
+.member-intro-2 a:hover {
+background-color:#ffff00;
+text-decoration:underline;
+font-size: 1.5em;
+}
+/* ===================== FOOTER ===================== */
+.footer {
+    height: 110px;
+    background-color: #f4f6f8;
+    position: relative;
+}
+
+.footer-logo {
+    margin: 0px 16%;
+    height: 50px;
+}
+
+.footer-logo a {
+    font-size: 24px;
+}
+
+.footer-copy-right {
+    font-size: 9px;
+    margin: 10px 16%;
+    padding-top: 6px;
+    border-top: 1px solid #ccc;
+}
+.picture-logo{
+    position: absolute;
+    width: 500px;
+    top: 1150px;
+    left: 0px;
+}
+.logo-1 {
+    font-size: 32px;
+    font-weight: 900;
+    color: #702023;
+    text-transform: uppercase;
+    display: inline-block;
+    line-height: 70px;
+    position: absolute;
+    top: 10px;
+    left: 210px;
+
+}
+.logo-1 span {
+    color: var(--main-color-first);
+}
+
+/*--------------clock --------------*/
+#dong-ho {
+    position: fixed;
+    left:10px;
+    top:33px;
+    z-index: 100;
+}
+#dong-ho #thoi-gian div span{
+    position: relative;
+    display:block;
+    width:50px;
+    height: 50px;
+    background: #2196f3;
+    color: #fff;
+    font-weight: 300;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    z-index:3;
+    top: 15px;
+}
+#dong-ho h2{
+    position: relative;
+    display:block;
+    color:#702023;
+    text-align: center;
+    margin:10px 0;
+    font-size: 19px;
+    font-weight: 700;
+    text-transform: none;
+}
+#dong-ho #thoi-gian{
+    display:flex;
+}
+#dong-ho #thoi-gian div{
+    margin: 0 5px;
+}
+#dong-ho #thoi-gian div:last-child span {
+    background: #ff006a;
+}
+#dong-ho #thoi-gian div:last-child span:nth-child(2) {
+    background: #ec0062;
+}

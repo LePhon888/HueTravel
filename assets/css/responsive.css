@@ -1,0 +1,113 @@
+/*   PC   */
+@media (min-width: 1024px) {
+    .list-icon {
+        display: none;
+    }
+}
+
+
+/*   Tablet   */
+@media (min-width: 740px) and (max-width: 1023px) {
+    .header-container {
+        padding: 14px 4%;
+    }
+
+    .explore-content {
+        padding: 30px 10px 20px 0;
+    }
+
+    .explore-content div {
+        margin: 0 0 0 9.5%;
+    }
+
+    .explore-list-img img:first-child {
+        width: 78%;
+        height: 70%;
+        left: 6%;
+        margin-top: 10%;
+    }
+    
+    .explore-list-img img:last-child {
+        width: 78%;
+        height: 70%;
+        margin-top: 20%;
+        position: absolute;
+        left: 14%;
+        border-radius: 1px;
+    }
+
+    .place-list-img {
+        width: 98%;
+    }
+
+    .item-img {
+        margin: 5px;
+        height: 460px;
+    }
+
+    .item-img img:first-child,
+    .item-img img:last-child {
+        height: 100%;
+    }
+
+    .item-img:nth-child(2) div {
+        height: 48%;
+    }
+
+    .footer-logo, 
+    .footer-copy-right {
+        margin: 0 4%;
+    }
+
+    .list-icon {
+        display: none;
+    }
+}
+
+
+/*   Mobile   */
+@media (max-width: 740px) {
+    .header-container nav {
+        display: none;
+    }
+
+    .header-container {
+        padding: 14px;
+    }
+    .logo {
+        font-size: 28px;
+    }
+
+    .welcome {
+        position: relative;
+        /* background: linear-gradient(rgba(255, 255, 255, 0.7),rgba(0, 0, 0, 0.6)),
+        url('/assets/images/veronica-reverse-WMo1t2nfBk8-unsplash.jpg');
+        background-size: cover;
+        background-position: center; */
+        height: 667px;
+    }
+
+    .explore-container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .explore-content {
+        padding: 0;
+    }
+
+    .explore-content div {
+        margin: 0;
+    }
+
+    .welcome .content {
+        padding: 100px 0 0 10px;
+    }
+
+    .list-icon {
+        font-size: 24px;
+        color: var(--main-color-second);
+        padding: 3px;
+    }
+
+}
